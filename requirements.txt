@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+joblib
+pandas
+numpy
+scikit-learn == 1.5.2
+pyaxmlparser          # (use this if you switched from androguard as I suggested)
+zipfile36; python_version<"3.8"
+python-multipart
+skops
