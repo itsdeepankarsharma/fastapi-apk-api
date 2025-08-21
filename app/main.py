@@ -9,7 +9,10 @@ from .feature_extractor import extract_features_from_apk
 MODEL_PATH    = os.getenv("MODEL_PATH",    "models/gradient_boosting_tuned.pkl")
 FEATURES_PATH = os.getenv("FEATURES_PATH", "models/selected_features.pkl")
 SCALER_PATH   = os.getenv("SCALER_PATH",   "models/scaler.pkl")  # optional
-
+EXTRA_PATH    = os.getenv("MODEL_PATH",    "models/extra_trees_tuned.pkl")
+LR_PATH       = os.getenv("MODEL_PATH",    "models/logistic_regression_tuned.pkl")
+RF_PATH       = os.getenv("MODEL_PATH",    "models/random_forest_tuned.pkl")
+BNB_PATH      = os.getenv("MODEL_PATH",    "models/bernoulli_naive_bayes_tuned.pkl")
 app = FastAPI(title="APK Malware Scanner API", version="1.0.0")
 
 # CORS: permissive for dev; restrict to your domain in prod
